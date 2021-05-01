@@ -33,6 +33,8 @@ public class Main {
 		StudentManager studentManager = new StudentManager();
 		studentManager.add(student);
 		studentManager.update(student);
+		
+		
 
 		InstructorManager instructorManager = new InstructorManager();
 
@@ -40,7 +42,9 @@ public class Main {
 		instructorManager.update(instructor);
 
 		UserManager userManager = new UserManager();
-		userManager.add(student);
+		
+		User[] users = {student, instructor};
+		userManager.addMultiple(users);
 	}
 
 }
